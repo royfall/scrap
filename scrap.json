@@ -95,7 +95,12 @@
             "items": {
               "$ref": "#/components/schemas/ScrapBagWeight"
             }
-          }
+          },
+          "step": {
+            "type": "string"
+          },
+          "coil_wip": {},
+          "coil_mmpp": {}
         }
       },
       "ScrapBagWeight": {
@@ -107,6 +112,35 @@
             "type": "number"
           },
           "created_at": {
+            "type": "string"
+          }
+        }
+      },
+      "ScrapReason": {
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "integer"
+          }
+        }
+      },
+      "ScrapSolution": {
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           }
         }
