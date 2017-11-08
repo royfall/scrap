@@ -99,8 +99,21 @@
           "step": {
             "type": "string"
           },
-          "coil_wip": {},
-          "coil_mmpp": {}
+          "coil_wip": {
+            "type": "string"
+          },
+          "coil_mmpp": {
+            "type": "string"
+          },
+          "scrap_solutions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ScrapSolution"
+            }
+          },
+          "scap_reason": {
+            "$ref": "#/components/schemas/ScrapReason"
+          }
         }
       },
       "ScrapBagWeight": {
