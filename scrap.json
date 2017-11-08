@@ -18,7 +18,11 @@
           "201": {
             "description": "Scrap bag created",
             "content": {
-              "application/json": {}
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasScrapBag"
+                }
+              }
             }
           }
         },
@@ -36,7 +40,28 @@
       },
       "patch": {
         "summary": "Updates a scrap bag",
-        "description": "Updates an existing scrap bag."
+        "description": "Updates an existing scrap bag.",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasScrapBag"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasScrapBag"
+              }
+            }
+          },
+          "required": true
+        }
       }
     }
   },
