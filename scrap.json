@@ -20,8 +20,7 @@
             "content": {
               "application/json": {}
             }
-          },
-          "401": {}
+          }
         },
         "requestBody": {
           "description": "Scrap Bag Body",
@@ -51,7 +50,22 @@
           }
         }
       },
-      "ScrapBag": {}
+      "ScrapBag": {
+        "properties": {
+          "id": {
+            "description": "Bag ID",
+            "type": "integer"
+          },
+          "machine_id": {
+            "description": "Machine ID",
+            "type": "integer"
+          },
+          "number": {
+            "description": "Bag Number",
+            "type": "integer"
+          }
+        }
+      }
     }
   }
 }
