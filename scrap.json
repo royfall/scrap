@@ -14,10 +14,23 @@
       "post": {
         "summary": "Creates a scrap bag",
         "description": "Creates a new scrap bag.",
+        "responses": {
+          "201": {
+            "description": "Scrap bag created",
+            "content": {
+              "application/json": {}
+            }
+          },
+          "401": {}
+        },
         "requestBody": {
-          "description": "{\n\n}",
+          "description": "Scrap Bag Body",
           "content": {
-            "application/json": {}
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasScrapBag"
+              }
+            }
           },
           "required": true
         }
@@ -26,6 +39,19 @@
         "summary": "Updates a scrap bag",
         "description": "Updates an existing scrap bag."
       }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Machine": {
+        "properties": {
+          "id": {
+            "description": "Machine ID",
+            "type": "integer"
+          }
+        }
+      },
+      "ScrapBag": {}
     }
   }
 }
