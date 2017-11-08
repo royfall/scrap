@@ -56,10 +56,6 @@
             "description": "Bag ID",
             "type": "integer"
           },
-          "machine_id": {
-            "description": "Machine ID",
-            "type": "integer"
-          },
           "number": {
             "description": "Bag Number",
             "type": "integer"
@@ -79,6 +75,15 @@
           "updated_at": {
             "description": "Updated At DateTime.",
             "type": "string"
+          },
+          "job": {
+            "description": "JOB ID",
+            "type": "string"
+          },
+          "accumulated_weight": {},
+          "machine_id": {
+            "description": "Machine ID",
+            "type": "integer"
           }
         }
       }
