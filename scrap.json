@@ -63,6 +63,22 @@
           "number": {
             "description": "Bag Number",
             "type": "integer"
+          },
+          "user_id": {
+            "description": "Active Directory User ID (Operator ID)",
+            "type": "string"
+          },
+          "user_name": {
+            "description": "User Name (Operator Name)",
+            "type": "string"
+          },
+          "created_at": {
+            "description": "Created At DateTime.",
+            "type": "string"
+          },
+          "updated_at": {
+            "description": "Updated At DateTime.",
+            "type": "string"
           }
         }
       }
