@@ -136,8 +136,8 @@
               "$ref": "#/components/schemas/ScrapSolution"
             }
           },
-          "scap_reason": {
-            "$ref": "#/components/schemas/ScrapReason"
+          "scrap_category": {
+            "$ref": "#/components/schemas/ScrapCategory"
           }
         }
       },
@@ -154,7 +154,7 @@
           }
         }
       },
-      "ScrapReason": {
+      "ScrapSolution": {
         "properties": {
           "id": {
             "type": "integer"
@@ -164,13 +164,10 @@
           },
           "description": {
             "type": "string"
-          },
-          "priority": {
-            "type": "integer"
           }
         }
       },
-      "ScrapSolution": {
+      "ScrapCategory": {
         "properties": {
           "id": {
             "type": "integer"
