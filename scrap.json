@@ -47,6 +47,10 @@
           "id": {
             "description": "Machine ID",
             "type": "integer"
+          },
+          "name": {
+            "description": "Machine Code Name",
+            "type": "string"
           }
         }
       },
@@ -54,10 +58,6 @@
         "properties": {
           "id": {
             "description": "Bag ID",
-            "type": "integer"
-          },
-          "number": {
-            "description": "Bag Number",
             "type": "integer"
           },
           "user_id": {
@@ -80,10 +80,34 @@
             "description": "JOB ID",
             "type": "string"
           },
-          "accumulated_weight": {},
-          "machine_id": {
-            "description": "Machine ID",
+          "accumulated_weight": {
+            "type": "number"
+          },
+          "acummulated_value": {
+            "type": "number"
+          },
+          "machine": {
+            "$ref": "#/components/schemas/Machine",
+            "description": "Related Machine"
+          },
+          "scrap_bag_weights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ScrapBagWeight"
+            }
+          }
+        }
+      },
+      "ScrapBagWeight": {
+        "properties": {
+          "id": {
             "type": "integer"
+          },
+          "weight": {
+            "type": "number"
+          },
+          "created_at": {
+            "type": "string"
           }
         }
       }
