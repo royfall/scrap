@@ -125,6 +125,16 @@
           "key": {
             "description": "Key = Family + Width + Sheet Number",
             "type": "string"
+          },
+          "username": {
+            "description": "Username",
+            "type": "string"
+          },
+          "createdAt": {
+            "description": "Created at date and time"
+          },
+          "updatedAt": {
+            "description": "Updated at date and time"
           }
         }
       }
