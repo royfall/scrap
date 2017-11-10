@@ -8,7 +8,7 @@
   "paths": {
     "/api/scrap": {
       "get": {
-        "summary": "Gets a Scrap List",
+        "summary": "Gets a scrap list",
         "description": "Gets a scrap list",
         "parameters": [
           {
@@ -40,7 +40,7 @@
     },
     "/api/scrap/{id}": {
       "get": {
-        "summary": "Scrap by ID",
+        "summary": "Get a scrap by ID",
         "description": "Gets a scrap by ID",
         "responses": {
           "200": {
