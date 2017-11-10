@@ -177,6 +177,10 @@
           "description": {
             "description": "Detail Description",
             "type": "string"
+          },
+          "detailType": {
+            "description": "Detail Type in NUM, DESC,  MAT",
+            "type": "string"
           }
         }
       }
