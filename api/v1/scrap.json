@@ -127,6 +127,7 @@
         "summary": "Get scrap by code",
         "responses": {
           "200": {
+            "description": "OK",
             "schema": {
               "$ref": "#/definitions/Scrap"
             }
