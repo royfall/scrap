@@ -114,6 +114,19 @@
             "type": "string"
           }
         }
+      },
+      "Document": {},
+      "Standard": {
+        "properties": {
+          "machine": {
+            "$ref": "#/components/schemas/Machine",
+            "description": "Machine"
+          },
+          "key": {
+            "description": "Key = Family + Width + Sheet Number",
+            "type": "string"
+          }
+        }
       }
     }
   }
