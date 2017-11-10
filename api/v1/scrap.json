@@ -9,8 +9,57 @@
     "/api/scrap": {
       "get": {
         "summary": "Gets a Scrap List",
-        "description": "Gets Scrap Information"
+        "description": "Gets a scrap list",
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Scrap Type Filter",
+            "type": "string"
+          },
+          {
+            "name": "createdAt",
+            "in": "query",
+            "description": "Created at date filter",
+            "type": "string",
+            "format": "date-time"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns an array of scraps",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/Scrap"
+              }
+            }
+          }
+        }
       }
+    },
+    "/api/scrap/{id}": {
+      "get": {
+        "summary": "Scrap by ID",
+        "description": "Gets a scrap by ID",
+        "responses": {
+          "200": {
+            "description": "Returns a single Scrap",
+            "schema": {
+              "$ref": "#/definitions/Scrap"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "Scrap ID",
+          "required": true,
+          "type": "integer"
+        }
+      ]
     }
   },
   "definitions": {
