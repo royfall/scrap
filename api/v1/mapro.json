@@ -135,6 +135,10 @@
           },
           "updatedAt": {
             "description": "Updated at date and time"
+          },
+          "status": {
+            "description": "Status",
+            "type": "string"
           }
         }
       }
