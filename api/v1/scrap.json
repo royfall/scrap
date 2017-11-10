@@ -63,10 +63,40 @@
         "code": {
           "description": "Generated Bag Code",
           "type": "integer"
+        },
+        "scrapDetail": {
+          "$ref": "#/definitions/ScrapDetail",
+          "description": "Scrap Detail"
+        },
+        "id": {
+          "description": "Scrap ID",
+          "type": "integer"
         }
       }
     },
-    "ScrapDetail": {},
+    "ScrapDetail": {
+      "properties": {
+        "weight": {
+          "format": "double",
+          "description": "Weight",
+          "type": "number"
+        },
+        "comment": {
+          "description": "Comment text",
+          "type": "string"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "description": "Created at date and time",
+          "type": "string"
+        },
+        "updatedAt": {
+          "format": "date-time",
+          "description": "Updated at date and time",
+          "type": "string"
+        }
+      }
+    },
     "ScrapReason": {},
     "ScrapArea": {}
   }
