@@ -179,7 +179,7 @@
             "type": "string"
           },
           "detailType": {
-            "description": "Detail Type in NUM, DESC,  MAT",
+            "description": "Detail Type in NUM, TXT,  MAT",
             "type": "string"
           }
         }
