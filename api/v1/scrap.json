@@ -36,12 +36,9 @@
             }
           },
           "500": {
-            "description": "Service Errors",
+            "description": "Service Error",
             "schema": {
-              "type": "array",
-              "items": {
-                "type": "#/definitions/ScrapError"
-              }
+              "$ref": "#/definitions/ScrapError"
             }
           }
         }
@@ -74,12 +71,9 @@
             }
           },
           "500": {
-            "description": "Service Errors",
+            "description": "Service Error",
             "schema": {
-              "type": "array",
-              "items": {
-                "type": "#/definitions/ScrapError"
-              }
+              "$ref": "#/definitions/ScrapError"
             }
           }
         }
@@ -106,12 +100,9 @@
             }
           },
           "500": {
-            "description": "Service Errors",
+            "description": "Service Error",
             "schema": {
-              "type": "array",
-              "items": {
-                "type": "#/definitions/ScrapError"
-              }
+              "$ref": "#/definitions/ScrapError"
             }
           }
         }
@@ -136,12 +127,9 @@
             "description": "Barcode not found"
           },
           "500": {
-            "description": "Service Errors",
+            "description": "Service Error",
             "schema": {
-              "type": "array",
-              "items": {
-                "type": "#/definitions/ScrapError"
-              }
+              "$ref": "#/definitions/ScrapError"
             }
           }
         }
