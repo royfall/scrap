@@ -246,6 +246,11 @@
           "description": {
             "description": "Document Detail Description",
             "type": "string"
+          },
+          "realValue": {
+            "format": "double",
+            "description": "Real Value",
+            "type": "number"
           }
         }
       }
