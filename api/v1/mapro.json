@@ -27,7 +27,7 @@
           },
           "updatedAt": {
             "format": "date-time",
-            "description": "Update date and time",
+            "description": "Updated at date and time",
             "type": "string"
           },
           "deletedAt": {
@@ -38,6 +38,13 @@
           "code": {
             "description": "Machine Code Identifier",
             "type": "string"
+          },
+          "machineComponents": {
+            "description": "Machine Components",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MachineComponent"
+            }
           }
         }
       },
@@ -45,6 +52,38 @@
         "properties": {
           "name": {
             "description": "Machine Type Name",
+            "type": "string"
+          }
+        }
+      },
+      "MachineComponent": {
+        "properties": {
+          "name": {
+            "description": "Component Name",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "date-time",
+            "description": "Created at date and time",
+            "type": "string"
+          },
+          "updatedAt": {
+            "format": "date-time",
+            "description": "Updated at date and time",
+            "type": "string"
+          },
+          "deletedAt": {
+            "format": "date-time",
+            "description": "Deleted at date and time",
+            "type": "string"
+          }
+        }
+      },
+      "MeasurementUnit": {},
+      "Measurement": {
+        "properties": {
+          "name": {
+            "description": "Measurement Name",
             "type": "string"
           }
         }
