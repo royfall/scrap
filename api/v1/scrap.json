@@ -1,1 +1,50 @@
-{"info":{"title":"scrap","description":"Scrap API","version":"1.0.0"},"swagger":"2.0"}
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "scrap",
+    "description": "Scrap API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/scrap": {
+      "get": {
+        "description": "Gets Scrap Information"
+      }
+    }
+  },
+  "definitions": {
+    "Scrap": {
+      "properties": {
+        "machine": {
+          "description": "Machine Code",
+          "type": "string"
+        },
+        "job": {
+          "description": "Job Number",
+          "type": "string"
+        },
+        "operator": {
+          "description": "Operator Identifier",
+          "type": "string"
+        },
+        "process": {
+          "description": "Process Phase",
+          "type": "string"
+        },
+        "accumulatedWeight": {
+          "type": "number"
+        },
+        "accumulatedValue": {
+          "description": "accumulatedWeight * factor",
+          "type": "number"
+        },
+        "factor": {
+          "type": "number"
+        }
+      }
+    },
+    "ScrapDetail": {},
+    "ScrapReason": {},
+    "ScrapArea": {}
+  }
+}
