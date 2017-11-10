@@ -72,6 +72,15 @@
                 "type": "#/definitions/ScrapError"
               }
             }
+          },
+          "500": {
+            "description": "Service Errors",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/ScrapError"
+              }
+            }
           }
         }
       },
@@ -89,6 +98,15 @@
         "responses": {
           "405": {
             "description": "Validation exception",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/ScrapError"
+              }
+            }
+          },
+          "500": {
+            "description": "Service Errors",
             "schema": {
               "type": "array",
               "items": {
