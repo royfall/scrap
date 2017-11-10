@@ -52,11 +52,17 @@
         },
         "createdAt": {
           "format": "date-time",
+          "description": "Created at date and time",
           "type": "string"
         },
         "updatedAt": {
           "format": "date-time",
+          "description": "Updated at date and time",
           "type": "string"
+        },
+        "code": {
+          "description": "Generated Bag Code",
+          "type": "integer"
         }
       }
     },
