@@ -180,12 +180,11 @@
             "description": "Family",
             "type": "string"
           },
-          "sheetNumber": {
-            "description": "Sheet Number",
-            "type": "string"
-          },
           "width": {
             "description": "Width",
+            "type": "string"
+          },
+          "Sheet": {
             "type": "string"
           }
         }
