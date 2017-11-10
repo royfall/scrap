@@ -71,6 +71,10 @@
         "id": {
           "description": "Scrap ID",
           "type": "integer"
+        },
+        "type": {
+          "description": "Scrap Type",
+          "type": "string"
         }
       }
     },
