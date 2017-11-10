@@ -138,6 +138,10 @@
             "format": "date-time",
             "description": "Created at date and time",
             "type": "string"
+          },
+          "documentDetails": {
+            "$ref": "#/components/schemas/DocumentDetail",
+            "description": "Document Details"
           }
         }
       },
@@ -208,7 +212,8 @@
             "type": "string"
           }
         }
-      }
+      },
+      "DocumentDetail": {}
     }
   }
 }
