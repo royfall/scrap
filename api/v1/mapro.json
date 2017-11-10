@@ -142,6 +142,10 @@
           "documentDetails": {
             "$ref": "#/components/schemas/DocumentDetail",
             "description": "Document Details"
+          },
+          "product": {
+            "description": "Product",
+            "type": "string"
           }
         }
       },
