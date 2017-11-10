@@ -36,6 +36,29 @@
             }
           }
         }
+      },
+      "post": {
+        "summary": "Creates a new Scrap",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/Scrap"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created Scrap ID",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Updates an existing Scrap"
       }
     },
     "/api/scrap/{id}": {
