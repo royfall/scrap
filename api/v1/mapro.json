@@ -87,10 +87,12 @@
       "MeasurementUnit": {
         "properties": {
           "name": {
-            "description": "Measurment Unit Name"
+            "description": "Measurment Unit Name",
+            "type": "string"
           },
           "symbol": {
-            "description": "Measurement Unit Symbol"
+            "description": "Measurement Unit Symbol",
+            "type": "string"
           },
           "measurementType": {
             "$ref": "#/components/schemas/MeasurementType",
