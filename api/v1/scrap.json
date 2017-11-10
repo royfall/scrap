@@ -8,6 +8,7 @@
   "paths": {
     "/api/scrap": {
       "get": {
+        "summary": "Gets a Scrap List",
         "description": "Gets Scrap Information"
       }
     }
