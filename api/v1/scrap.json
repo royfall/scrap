@@ -124,7 +124,26 @@
     },
     "/api/scrap/{code}": {
       "get": {
-        "summary": "Get scrap by code"
+        "summary": "Get scrap by code",
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Scrap"
+            }
+          },
+          "404": {
+            "description": "Barcode not found"
+          },
+          "500": {
+            "description": "Service Errors",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/ScrapError"
+              }
+            }
+          }
+        }
       },
       "parameters": [
         {
