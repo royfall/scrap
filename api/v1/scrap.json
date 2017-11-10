@@ -32,14 +32,31 @@
           "type": "string"
         },
         "accumulatedWeight": {
+          "format": "double",
+          "description": "accumulated weight",
           "type": "number"
         },
         "accumulatedValue": {
-          "description": "accumulatedWeight * factor",
+          "format": "double",
+          "description": "accumulated weight * factor",
           "type": "number"
         },
         "factor": {
+          "format": "double",
+          "description": "Factor for calculating accumulated weight",
           "type": "number"
+        },
+        "username": {
+          "description": "System Username",
+          "type": "string"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "updatedAt": {
+          "format": "date-time",
+          "type": "string"
         }
       }
     },
