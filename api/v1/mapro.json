@@ -131,10 +131,14 @@
             "type": "string"
           },
           "createdAt": {
-            "description": "Created at date and time"
+            "format": "date-time",
+            "description": "Created at date and time",
+            "type": "string"
           },
           "updatedAt": {
-            "description": "Updated at date and time"
+            "format": "date-time",
+            "description": "Updated at date and time",
+            "type": "string"
           },
           "status": {
             "description": "Status",
