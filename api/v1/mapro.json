@@ -76,6 +76,11 @@
             "format": "date-time",
             "description": "Deleted at date and time",
             "type": "string"
+          },
+          "rangePercentage": {
+            "format": "double",
+            "description": "Range Percentage for Tolerance",
+            "type": "number"
           }
         }
       },
