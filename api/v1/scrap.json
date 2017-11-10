@@ -207,6 +207,10 @@
         "OperatorName": {
           "description": "Operator's Name",
           "type": "string"
+        },
+        "machineName": {
+          "description": "Machine Name",
+          "type": "string"
         }
       }
     },
@@ -304,7 +308,17 @@
           "type": "string"
         },
         "process": {
-          "description": "Process Phase Description"
+          "description": "Process Phase Description",
+          "type": "string"
+        },
+        "machineName": {
+          "description": "Machine Name",
+          "type": "string"
+        },
+        "factor": {
+          "format": "double",
+          "description": "Accumulated Weight Factor",
+          "type": "number"
         }
       }
     }
