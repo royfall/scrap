@@ -108,11 +108,6 @@
         }
       }
     },
-    "/api/machine/": {
-      "get": {
-        "summary": "Get Machine Details by Code"
-      }
-    },
     "/api/scrap/{code}": {
       "get": {
         "summary": "Get scrap by code",
@@ -157,7 +152,7 @@
           "type": "string"
         },
         "operator": {
-          "description": "Operator Identifier",
+          "description": "Operator's Identifier",
           "type": "string"
         },
         "process": {
@@ -207,6 +202,10 @@
         },
         "type": {
           "description": "Scrap Type",
+          "type": "string"
+        },
+        "OperatorName": {
+          "description": "Operator's Name",
           "type": "string"
         }
       }
@@ -287,6 +286,25 @@
         "element": {
           "description": "Error element",
           "type": "string"
+        }
+      }
+    },
+    "ScrapData": {
+      "properties": {
+        "job": {
+          "description": "Job Identifier",
+          "type": "string"
+        },
+        "operator": {
+          "description": "Operator's Identifier",
+          "type": "string"
+        },
+        "operatorName": {
+          "description": "Operator's Name",
+          "type": "string"
+        },
+        "process": {
+          "description": "Process Phase Description"
         }
       }
     }
