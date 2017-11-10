@@ -81,6 +81,13 @@
             "format": "double",
             "description": "Range Percentage for Tolerance",
             "type": "number"
+          },
+          "children": {
+            "description": "Children Components",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MachineComponent"
+            }
           }
         }
       },
