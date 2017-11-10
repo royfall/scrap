@@ -115,7 +115,32 @@
           }
         }
       },
-      "Document": {},
+      "Document": {
+        "properties": {
+          "username": {
+            "description": "Username",
+            "type": "string"
+          },
+          "standard": {
+            "$ref": "#/components/schemas/Standard",
+            "description": "Standard"
+          },
+          "job": {
+            "description": "Job",
+            "type": "string"
+          },
+          "updatedAt": {
+            "format": "date-time",
+            "description": "Updated at date and time",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "date-time",
+            "description": "Created at date and time",
+            "type": "string"
+          }
+        }
+      },
       "Standard": {
         "properties": {
           "machine": {
