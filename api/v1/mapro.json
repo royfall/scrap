@@ -183,6 +183,10 @@
           "sheetNumber": {
             "description": "Sheet Number",
             "type": "string"
+          },
+          "width": {
+            "description": "Width",
+            "type": "string"
           }
         }
       },
