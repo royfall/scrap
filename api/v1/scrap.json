@@ -34,6 +34,15 @@
                 "type": "#/definitions/Scrap"
               }
             }
+          },
+          "500": {
+            "description": "Service Errors",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/ScrapError"
+              }
+            }
           }
         }
       },
