@@ -242,6 +242,10 @@
           "standardDetail": {
             "$ref": "#/components/schemas/StandardDetail",
             "description": "Standard Detail"
+          },
+          "description": {
+            "description": "Document Detail Description",
+            "type": "string"
           }
         }
       }
