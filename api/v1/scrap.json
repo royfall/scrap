@@ -117,24 +117,20 @@
         }
       }
     },
-    "/api/scrap/{id}": {
+    "/api/machine/": {
       "get": {
-        "summary": "Get a scrap by ID",
-        "description": "Gets a scrap by ID",
-        "responses": {
-          "200": {
-            "description": "Returns a single Scrap",
-            "schema": {
-              "$ref": "#/definitions/Scrap"
-            }
-          }
-        }
+        "summary": "Get Machine Details by Code"
+      }
+    },
+    "/api/scrap/{code}": {
+      "get": {
+        "summary": "Get scrap by code"
       },
       "parameters": [
         {
-          "name": "id",
+          "name": "code",
           "in": "path",
-          "description": "Scrap ID",
+          "description": "Scrap Barcode",
           "required": true,
           "type": "integer"
         }
@@ -190,7 +186,7 @@
           "type": "string"
         },
         "code": {
-          "description": "Generated Bag Code",
+          "description": "Generated Barcode",
           "type": "integer"
         },
         "scrapDetail": {
