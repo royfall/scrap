@@ -114,6 +114,10 @@
         "scrapArea": {
           "$ref": "#/definitions/ScrapArea",
           "description": "Scrap Area"
+        },
+        "id": {
+          "description": "Scrap Reason ID",
+          "type": "integer"
         }
       }
     },
@@ -122,6 +126,10 @@
         "name": {
           "description": "Scrap Area name",
           "type": "string"
+        },
+        "id": {
+          "description": "Scrap Area ID",
+          "type": "integer"
         }
       }
     }
