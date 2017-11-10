@@ -50,15 +50,44 @@
         ],
         "responses": {
           "201": {
-            "description": "Created Scrap ID",
+            "description": "Scrap ID",
             "schema": {
               "type": "integer"
+            }
+          },
+          "405": {
+            "description": "Validation exception",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/ScrapError"
+              }
             }
           }
         }
       },
       "patch": {
-        "summary": "Updates an existing Scrap"
+        "summary": "Updates an existing Scrap",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/Scrap"
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Validation exception",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/ScrapError"
+              }
+            }
+          }
+        }
       }
     },
     "/api/scrap/{id}": {
@@ -207,6 +236,26 @@
         "id": {
           "description": "Scrap Area ID",
           "type": "integer"
+        }
+      }
+    },
+    "ScrapError": {
+      "properties": {
+        "name": {
+          "description": "Error name",
+          "type": "string"
+        },
+        "description": {
+          "description": "Error description",
+          "type": "string"
+        },
+        "code": {
+          "description": "Error code",
+          "type": "string"
+        },
+        "element": {
+          "description": "Error element",
+          "type": "string"
         }
       }
     }
