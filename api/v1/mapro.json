@@ -1,1 +1,43 @@
-{"info":{"title":"mapro","description":"Maestros de Procesos","version":"1.0.0"},"openapi":"3.0.0"}
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "mapro",
+    "description": "Maestros de Procesos",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/mapro/machine": {}
+  },
+  "components": {
+    "schemas": {
+      "Machine": {
+        "properties": {
+          "machineType": {
+            "$ref": "#/components/schemas/MachineType",
+            "description": "Machine Type"
+          },
+          "name": {
+            "description": "Machine Name",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "date-time",
+            "description": "Creation date and time",
+            "type": "string"
+          },
+          "updatedAt": {
+            "format": "date-time",
+            "description": "Update date and time",
+            "type": "string"
+          },
+          "deletedAt": {
+            "format": "date-time",
+            "description": "Deletion date and time",
+            "type": "string"
+          }
+        }
+      },
+      "MachineType": {}
+    }
+  }
+}
