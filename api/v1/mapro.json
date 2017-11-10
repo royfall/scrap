@@ -187,6 +187,18 @@
           "Sheet": {
             "description": "Sheet ",
             "type": "string"
+          },
+          "client": {
+            "description": "Client",
+            "type": "string"
+          },
+          "rawMaterialA": {
+            "description": "Raw Material A",
+            "type": "string"
+          },
+          "rawMaterialB": {
+            "description": "Raw Material B",
+            "type": "string"
           }
         }
       },
