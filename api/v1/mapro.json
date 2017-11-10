@@ -143,6 +143,40 @@
           "status": {
             "description": "Status",
             "type": "string"
+          },
+          "standardDetails": {
+            "description": "Standard Details",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StandardDetail"
+            }
+          }
+        }
+      },
+      "StandardDetail": {
+        "properties": {
+          "machineComponent": {
+            "$ref": "#/components/schemas/MachineComponent",
+            "description": "Machine Component"
+          },
+          "minValue": {
+            "format": "double",
+            "description": "Minimum Value",
+            "type": "number"
+          },
+          "stdValue": {
+            "format": "double",
+            "description": "Standard Value",
+            "type": "number"
+          },
+          "maxValue": {
+            "format": "double",
+            "description": "Maximum Value",
+            "type": "number"
+          },
+          "description": {
+            "description": "Detail Description",
+            "type": "string"
           }
         }
       }
