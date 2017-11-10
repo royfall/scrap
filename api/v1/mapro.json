@@ -237,7 +237,14 @@
           }
         }
       },
-      "DocumentDetail": {}
+      "DocumentDetail": {
+        "properties": {
+          "standardDetail": {
+            "$ref": "#/components/schemas/StandardDetail",
+            "description": "Standard Detail"
+          }
+        }
+      }
     }
   }
 }
