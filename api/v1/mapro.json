@@ -41,7 +41,14 @@
           }
         }
       },
-      "MachineType": {}
+      "MachineType": {
+        "properties": {
+          "name": {
+            "description": "Machine Type Name",
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }
