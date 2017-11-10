@@ -84,11 +84,24 @@
           }
         }
       },
-      "MeasurementUnit": {},
-      "Measurement": {
+      "MeasurementUnit": {
         "properties": {
           "name": {
-            "description": "Measurement Name",
+            "description": "Measurment Unit Name"
+          },
+          "symbol": {
+            "description": "Measurement Unit Symbol"
+          },
+          "measurementType": {
+            "$ref": "#/components/schemas/MeasurementType",
+            "description": "Measurment Type"
+          }
+        }
+      },
+      "MeasurementType": {
+        "properties": {
+          "name": {
+            "description": "Measurement type name",
             "type": "string"
           }
         }
