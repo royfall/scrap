@@ -94,10 +94,36 @@
           "format": "date-time",
           "description": "Updated at date and time",
           "type": "string"
+        },
+        "scrapReason": {
+          "$ref": "#/definitions/ScrapReason",
+          "description": "Scrap Resaon"
+        },
+        "id": {
+          "description": "Scrap Detail ID",
+          "type": "integer"
         }
       }
     },
-    "ScrapReason": {},
-    "ScrapArea": {}
+    "ScrapReason": {
+      "properties": {
+        "description": {
+          "description": "Scrap Reason Description text",
+          "type": "string"
+        },
+        "scrapArea": {
+          "$ref": "#/definitions/ScrapArea",
+          "description": "Scrap Area"
+        }
+      }
+    },
+    "ScrapArea": {
+      "properties": {
+        "name": {
+          "description": "Scrap Area name",
+          "type": "string"
+        }
+      }
+    }
   }
 }
