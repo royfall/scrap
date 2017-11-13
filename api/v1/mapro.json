@@ -297,6 +297,9 @@
           "name": {
             "description": "Measurement type name",
             "type": "string"
+          },
+          "id": {
+            "type": "integer"
           }
         }
       },
