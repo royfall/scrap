@@ -643,6 +643,34 @@
           }
         }
       ]
+    },
+    "/mapro/machineType": {
+      "get": {
+        "summary": "List of machine types",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MachineType"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
