@@ -31,9 +31,27 @@
             }
           }
         }
-      }
+      },
+      "parameters": [
+        {
+          "name": "job",
+          "in": "query",
+          "description": "Job Code",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "createdAt",
+          "in": "query",
+          "description": "Created at date",
+          "schema": {
+            "format": "date-time",
+            "type": "string"
+          }
+        }
+      ]
     },
-    "/mapro/job": {},
     "/mapro/job/{jobCode}": {
       "get": {
         "summary": "Get Job by Code",
