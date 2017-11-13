@@ -898,6 +898,34 @@
           }
         }
       }
+    },
+    "/mapro/machine/{id}/duplicate": {
+      "post": {
+        "summary": "Duplicates the machine",
+        "responses": {
+          "201": {
+            "description": "Returns id of the new machine",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "500": {}
+        }
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "integer"
+          }
+        }
+      ]
     }
   },
   "components": {
