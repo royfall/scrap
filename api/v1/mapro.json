@@ -31,26 +31,7 @@
             }
           }
         }
-      },
-      "parameters": [
-        {
-          "name": "job",
-          "in": "query",
-          "description": "Job Code",
-          "schema": {
-            "type": "string"
-          }
-        },
-        {
-          "name": "createdAt",
-          "in": "query",
-          "description": "Created at date",
-          "schema": {
-            "format": "date-time",
-            "type": "string"
-          }
-        }
-      ]
+      }
     },
     "/mapro/job/{jobCode}": {
       "get": {
@@ -98,6 +79,50 @@
           }
         }
       ]
+    },
+    "/mapro/document": {
+      "get": {
+        "summary": "Retrieves a Document List",
+        "parameters": [
+          {
+            "name": "job",
+            "in": "query",
+            "description": "Job Code",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "createdAt",
+            "in": "query",
+            "description": "Creation date",
+            "schema": {
+              "format": "date-time",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasDocument"
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
