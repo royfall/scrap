@@ -100,6 +100,24 @@
               "format": "date-time",
               "type": "string"
             }
+          },
+          {
+            "name": "machine",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "operator",
+            "in": "query"
           }
         ],
         "responses": {
@@ -523,6 +541,9 @@
           },
           "id": {
             "type": "integer"
+          },
+          "operator": {
+            "type": "string"
           }
         }
       },
