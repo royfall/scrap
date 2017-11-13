@@ -930,6 +930,16 @@
     "/mapro/document/{id}/detail": {
       "post": {
         "summary": "Creates Detail",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
         "responses": {
           "201": {
             "description": "Detail ID",
@@ -976,7 +986,33 @@
         }
       },
       "patch": {
-        "summary": "Updates Detail"
+        "summary": "Updates Detail",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {},
+          "404": {},
+          "405": {},
+          "500": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasDocumentDetail"
+              }
+            }
+          },
+          "required": true
+        }
       }
     }
   },
