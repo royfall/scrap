@@ -9,6 +9,23 @@
     "/mapro/machine": {
       "get": {
         "summary": "Retrieves a Machine List",
+        "parameters": [
+          {
+            "name": "createdAt",
+            "in": "query",
+            "schema": {
+              "format": "date-time",
+              "type": "string"
+            }
+          },
+          {
+            "name": "code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Returns machine list",
