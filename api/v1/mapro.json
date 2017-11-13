@@ -6,7 +6,11 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/mapro/machine": {}
+    "/mapro/machine": {
+      "get": {
+        "summary": "Retrieves a Machine List"
+      }
+    }
   },
   "components": {
     "schemas": {
