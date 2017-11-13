@@ -308,6 +308,9 @@
         "machineName": {
           "description": "Machine Name",
           "type": "string"
+        },
+        "status": {
+          "type": "string"
         }
       }
     },
