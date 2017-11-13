@@ -861,44 +861,6 @@
         }
       }
     },
-    "/mapro/measurementType/{id}/units": {
-      "get": {
-        "summary": "Retrieves list of measurement units",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/MeasurementUnit"
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemasMaproError"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/mapro/machine/{id}/duplicate": {
       "post": {
         "summary": "Duplicates the machine",
@@ -1186,6 +1148,44 @@
                   "type": "array",
                   "items": {
                     "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/mapro/measurementType/{id}/unit": {
+      "get": {
+        "summary": "Retrieves list of measurement units",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MeasurementUnit"
                   }
                 }
               }
