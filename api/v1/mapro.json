@@ -1388,8 +1388,11 @@
             "type": "string"
           },
           "documentDetails": {
-            "$ref": "#/components/schemas/DocumentDetail",
-            "description": "Document Details"
+            "description": "Document Details",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DocumentDetail"
+            }
           },
           "product": {
             "description": "Product",
