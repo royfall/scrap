@@ -32,6 +32,54 @@
           }
         }
       }
+    },
+    "/mapro/job": {},
+    "/mapro/job/{jobCode}": {
+      "get": {
+        "summary": "Get Job by Code",
+        "responses": {
+          "200": {
+            "description": "Returns Job code",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Job Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "jobCode",
+          "in": "path",
+          "description": "Job Code",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
     }
   },
   "components": {
