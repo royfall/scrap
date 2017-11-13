@@ -440,6 +440,9 @@
             "format": "double",
             "description": "Real Value",
             "type": "number"
+          },
+          "id": {
+            "type": "integer"
           }
         }
       },
