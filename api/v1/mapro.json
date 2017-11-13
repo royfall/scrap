@@ -427,6 +427,55 @@
           }
         }
       ]
+    },
+    "/mapro/document/{id}/generate": {
+      "get": {
+        "summary": "Generates the document",
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {},
+              "application/pdf": {}
+            }
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "integer"
+          }
+        },
+        {
+          "name": "format",
+          "in": "query",
+          "description": "Document format (optional)",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
     }
   },
   "components": {
