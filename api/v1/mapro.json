@@ -125,7 +125,8 @@
       },
       "post": {
         "summary": "Creates a new document"
-      }
+      },
+      "patch": {}
     },
     "/mapro/standard": {
       "get": {
