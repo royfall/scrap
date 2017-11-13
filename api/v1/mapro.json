@@ -125,6 +125,18 @@
       },
       "post": {
         "summary": "Creates a new document",
+        "responses": {
+          "201": {
+            "description": "Returns created document ID",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
         "requestBody": {
           "content": {
             "application/json": {
