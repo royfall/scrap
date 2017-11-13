@@ -122,6 +122,9 @@
             }
           }
         }
+      },
+      "post": {
+        "summary": "Creates a new document"
       }
     },
     "/mapro/standard": {
@@ -223,7 +226,51 @@
         }
       ]
     },
-    "/mapro/standard/{id}/changeStatus": {}
+    "/mapro/standard/{id}/changeStatus": {
+      "patch": {
+        "summary": "Change Machine Status",
+        "responses": {
+          "200": {},
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "integer"
+          }
+        }
+      ]
+    }
   },
   "components": {
     "schemas": {
