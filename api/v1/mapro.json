@@ -101,6 +101,14 @@
           "required": true
         }
       },
+      "delete": {
+        "summary": "Deletes a machine",
+        "responses": {
+          "200": {},
+          "404": {},
+          "500": {}
+        }
+      },
       "patch": {
         "summary": "Updates a machine by id",
         "responses": {
@@ -1469,6 +1477,9 @@
             "type": "string"
           },
           "comment": {
+            "type": "string"
+          },
+          "article": {
             "type": "string"
           }
         }
