@@ -222,7 +222,8 @@
           }
         }
       ]
-    }
+    },
+    "/mapro/standard/{id}/changeStatus": {}
   },
   "components": {
     "schemas": {
