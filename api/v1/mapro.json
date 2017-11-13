@@ -420,6 +420,9 @@
           "detailType": {
             "description": "Detail Type in NUM, TXT,  MAT",
             "type": "string"
+          },
+          "id": {
+            "type": "integer"
           }
         }
       },
