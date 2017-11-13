@@ -181,7 +181,7 @@
     },
     "/mapro/standard/{id}": {
       "get": {
-        "summary": "Gets a Standard by ID",
+        "summary": "Gets a single Standard by ID",
         "responses": {
           "200": {
             "content": {
