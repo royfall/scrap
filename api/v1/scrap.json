@@ -339,6 +339,17 @@
         "id": {
           "description": "Scrap Detail ID",
           "type": "integer"
+        },
+        "finalWeight": {
+          "format": "double",
+          "type": "number"
+        },
+        "palletWeight": {
+          "format": "double",
+          "type": "number"
+        },
+        "status": {
+          "type": "string"
         }
       }
     },
