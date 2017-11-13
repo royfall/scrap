@@ -124,7 +124,17 @@
         }
       },
       "post": {
-        "summary": "Creates a new document"
+        "summary": "Creates a new document",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasDocument"
+              }
+            }
+          },
+          "required": true
+        }
       },
       "patch": {}
     },
@@ -258,7 +268,8 @@
                 "type": "string"
               }
             }
-          }
+          },
+          "required": true
         }
       },
       "parameters": [
