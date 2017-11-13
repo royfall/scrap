@@ -48,6 +48,51 @@
             }
           }
         }
+      },
+      "post": {
+        "responses": {
+          "201": {
+            "description": "Returns created machine id",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "405": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaproError"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasMachine"
+              }
+            }
+          },
+          "required": true
+        }
       }
     },
     "/mapro/job/{jobCode}": {
