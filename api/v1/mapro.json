@@ -93,6 +93,52 @@
           },
           "required": true
         }
+      },
+      "patch": {
+        "summary": "Updates a machine by id",
+        "responses": {
+          "200": {},
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          },
+          "405": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MaproError"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasMachine"
+              }
+            }
+          },
+          "required": true
+        }
       }
     },
     "/mapro/job/{jobCode}": {
