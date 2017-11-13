@@ -779,8 +779,24 @@
         "summary": "Deletes a component by id",
         "responses": {
           "200": {},
-          "404": {},
-          "500": {}
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
         },
         "requestBody": {
           "content": {
