@@ -178,7 +178,8 @@
           }
         }
       }
-    }
+    },
+    "/mapro/standard/{id}": {}
   },
   "components": {
     "schemas": {
@@ -373,6 +374,9 @@
           },
           "family": {
             "type": "string"
+          },
+          "id": {
+            "type": "integer"
           }
         }
       },
