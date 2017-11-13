@@ -1431,7 +1431,9 @@
           "qualityComment": {
             "type": "string"
           },
-          "comment": {}
+          "comment": {
+            "type": "string"
+          }
         }
       },
       "StandardDetail": {
