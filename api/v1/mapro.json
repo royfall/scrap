@@ -218,6 +218,9 @@
             "items": {
               "$ref": "#/components/schemas/MachineComponent"
             }
+          },
+          "id": {
+            "type": "integer"
           }
         }
       },
