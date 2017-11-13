@@ -8,7 +8,29 @@
   "paths": {
     "/mapro/machine": {
       "get": {
-        "summary": "Retrieves a Machine List"
+        "summary": "Retrieves a Machine List",
+        "responses": {
+          "200": {
+            "description": "Returns machine list",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMachine"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -255,6 +277,19 @@
             "format": "double",
             "description": "Real Value",
             "type": "number"
+          }
+        }
+      },
+      "MaproError": {
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "element": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
           }
         }
       }
