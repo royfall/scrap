@@ -229,6 +229,9 @@
           "name": {
             "description": "Machine Type Name",
             "type": "string"
+          },
+          "id": {
+            "type": "integer"
           }
         }
       },
