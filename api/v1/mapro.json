@@ -400,11 +400,23 @@
             }
           }
         }
+      },
+      "post": {
+        "summary": "Creates a new Standard"
       }
     },
     "/mapro/standard/{id}": {
       "get": {
         "summary": "Gets a single Standard by ID",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "content": {
