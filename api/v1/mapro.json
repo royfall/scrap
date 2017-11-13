@@ -1174,6 +1174,34 @@
           "required": true
         }
       }
+    },
+    "/mapro/standard/status": {
+      "get": {
+        "summary": "Available statuses list",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasMaproError"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
