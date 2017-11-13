@@ -117,7 +117,10 @@
           },
           {
             "name": "operator",
-            "in": "query"
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
