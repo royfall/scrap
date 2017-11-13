@@ -217,13 +217,6 @@
             }
           },
           {
-            "name": "machine",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "status",
             "in": "query",
             "schema": {
@@ -235,6 +228,13 @@
             "in": "query",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "machineId",
+            "in": "query",
+            "schema": {
+              "type": "integer"
             }
           }
         ],
