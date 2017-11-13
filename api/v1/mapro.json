@@ -1476,12 +1476,16 @@
           "qualityComment": {
             "type": "string"
           },
-          "comment": {
-            "type": "string"
-          },
           "article": {
             "type": "string"
-          }
+          },
+          "attendantComment": {
+            "type": "string"
+          },
+          "supervisorComment": {
+            "type": "string"
+          },
+          "technicalComment": {}
         }
       },
       "StandardDetail": {
