@@ -1051,7 +1051,7 @@
         }
       }
     },
-    "/mapro/standard/{id}/detail/": {
+    "/mapro/standard/{id}/detail": {
       "get": {
         "summary": "Gets list of details",
         "parameters": [
