@@ -123,6 +123,11 @@
           }
         }
       }
+    },
+    "/mapro/standard": {
+      "get": {
+        "summary": "Retrieves a Standard List"
+      }
     }
   },
   "components": {
@@ -297,16 +302,8 @@
               "$ref": "#/components/schemas/StandardDetail"
             }
           },
-          "Family": {
-            "description": "Family",
-            "type": "string"
-          },
           "width": {
             "description": "Width",
-            "type": "string"
-          },
-          "Sheet": {
-            "description": "Sheet ",
             "type": "string"
           },
           "client": {
@@ -319,6 +316,12 @@
           },
           "rawMaterialB": {
             "description": "Raw Material B",
+            "type": "string"
+          },
+          "sheet": {
+            "type": "string"
+          },
+          "family": {
             "type": "string"
           }
         }
