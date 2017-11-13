@@ -775,6 +775,24 @@
           "required": true
         }
       },
+      "delete": {
+        "summary": "Deletes a component by id",
+        "responses": {
+          "200": {},
+          "404": {},
+          "500": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer"
+              }
+            }
+          },
+          "required": true
+        }
+      },
       "patch": {
         "summary": "Updates a component belonging to a given machine",
         "responses": {
