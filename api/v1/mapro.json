@@ -1424,7 +1424,14 @@
           },
           "id": {
             "type": "integer"
-          }
+          },
+          "operatorComment": {
+            "type": "string"
+          },
+          "qualityComment": {
+            "type": "string"
+          },
+          "comment": {}
         }
       },
       "StandardDetail": {
