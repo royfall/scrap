@@ -290,8 +290,11 @@
           "type": "integer"
         },
         "scrapDetail": {
-          "$ref": "#/definitions/ScrapDetail",
-          "description": "Scrap Detail"
+          "description": "Scrap Detail",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ScrapDetail"
+          }
         },
         "id": {
           "description": "Scrap ID",
