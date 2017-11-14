@@ -383,6 +383,12 @@
         "id": {
           "description": "Scrap Area ID",
           "type": "integer"
+        },
+        "scrapReasons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ScrapReason"
+          }
         }
       }
     },
