@@ -301,15 +301,14 @@
           "description": "Scrap Type",
           "type": "string"
         },
-        "OperatorName": {
-          "description": "Operator's Name",
-          "type": "string"
-        },
         "machineName": {
           "description": "Machine Name",
           "type": "string"
         },
         "status": {
+          "type": "string"
+        },
+        "operatorName": {
           "type": "string"
         }
       }
