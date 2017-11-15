@@ -236,16 +236,7 @@
             }
           }
         }
-      },
-      "parameters": [
-        {
-          "name": "code",
-          "in": "path",
-          "description": "Scrap Barcode",
-          "required": true,
-          "type": "integer"
-        }
-      ]
+      }
     }
   },
   "definitions": {
