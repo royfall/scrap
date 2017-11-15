@@ -224,7 +224,10 @@
             }
           },
           "404": {
-            "description": "Barcode not found"
+            "description": "Barcode not found",
+            "schema": {
+              "$ref": "#/definitions/ScrapError"
+            }
           },
           "500": {
             "description": "Service Error",
