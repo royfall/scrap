@@ -235,7 +235,8 @@
           "type": "integer"
         }
       ]
-    }
+    },
+    "/api/scrap/findByCode": {}
   },
   "definitions": {
     "Scrap": {
