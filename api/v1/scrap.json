@@ -108,37 +108,6 @@
         }
       }
     },
-    "/api/scrap/{code}": {
-      "get": {
-        "summary": "Get scrap by code",
-        "responses": {
-          "200": {
-            "description": "Returns a single scrap",
-            "schema": {
-              "$ref": "#/definitions/Scrap"
-            }
-          },
-          "404": {
-            "description": "Barcode not found"
-          },
-          "500": {
-            "description": "Service Error",
-            "schema": {
-              "$ref": "#/definitions/ScrapError"
-            }
-          }
-        }
-      },
-      "parameters": [
-        {
-          "name": "code",
-          "in": "path",
-          "description": "Scrap Barcode",
-          "required": true,
-          "type": "integer"
-        }
-      ]
-    },
     "/api/scrap/{code}/detail": {
       "post": {
         "summary": "Creates a new Scrap Detail",
@@ -236,7 +205,45 @@
         }
       ]
     },
-    "/api/scrap/findByCode": {}
+    "/api/scrap/findByCode": {
+      "get": {
+        "summary": "Get scrap by code",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "description": "Scrap Code",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns a single scrap",
+            "schema": {
+              "$ref": "#/definitions/Scrap"
+            }
+          },
+          "404": {
+            "description": "Barcode not found"
+          },
+          "500": {
+            "description": "Service Error",
+            "schema": {
+              "$ref": "#/definitions/ScrapError"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "code",
+          "in": "path",
+          "description": "Scrap Barcode",
+          "required": true,
+          "type": "integer"
+        }
+      ]
+    }
   },
   "definitions": {
     "Scrap": {
